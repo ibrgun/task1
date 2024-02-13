@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+          
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .room-container {
+          display: flex;
+          flex-wrap: wrap;
+          
+        }
+        
+
+        .room {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: calc(50% - 20px);
+           
+            box-sizing: border-box;
+        }
+        
+
+        .room img {
+            max-width: 200px;
+            height: auto;
+        }
+        .room.right {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        .navigation {
+            float: right;
+            
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navigation li {
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 25px;
+        }
+        .navigation a{
+          text-decoration: none;
+          color: #ff8c00;
+        }
+
+        .btn-orange {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./photos/logo.jpeg" alt="Hotel Logo" height="70">
+    </header>
+    <ul class="navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+
+    <main>
+      <h2 style="color: #ff8c00; text-align: center;">Rooms & Rates</h2> 
+      <div class="room-container"> 
+      <div class="room">
+            <img src="./photos/standartTw.jpeg" alt="Room 1">
+            <h3>StandaRT Twin Room</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, vero.</p>
+            <a href="#" class="btn-orange">Check Rates</a>
+        </div>
+
+        <div class="room right">
+            <img src="photos/standart.jpeg" alt="Room 2">
+            <h3>Standart Room</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illo.</p>
+            <a href="#" class="btn-orange">Check Rates</a>
+        </div>
+
+        <div class="room">
+            <img src="photos/standarView.jpeg" alt="Room 3">
+            <h3>Standart View Room</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non?</p>
+            <a href="#" class="btn-orange">Check Rates</a>
+        </div>
+
+        <div class="room right">
+            <img src="photos/deluxe.jpeg" alt="Room 4">
+            <h3>Deluxe Room</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, cum!</p>
+            <a href="#" class="btn-orange">Check Rates</a>
+        </div>
+
+      
+    </main>
+
+</body>
+</html>
